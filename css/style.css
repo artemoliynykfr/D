@@ -640,6 +640,7 @@ header {
   opacity: 1;
   height: auto;
   padding: 30px;
+  visibility: visible;
 }
 
 .question .accordion__item.show .line2 {
@@ -662,15 +663,16 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   cursor: pointer;
-  gap: 40px;
 }
 
 .question .accordion__title {
   font-weight: 700;
+  margin-right: 40px;
 }
 
 .question .accordion__content {
   opacity: 0;
+  visibility: hidden;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1440,8 +1442,8 @@ li {
     padding: 10px;
   }
 
-  .question .accordion__header {
-    gap: 20px;
+  .question .accordion__title {
+    margin-right: 20px;
   }
 
   .title {
